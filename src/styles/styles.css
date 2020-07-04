@@ -1,0 +1,46 @@
+.flag {
+  position: absolute;
+  width: 900px;
+  min-width: 900px;
+  height: 450px;
+  background-color: #9b1c2c;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flag .stripe {
+  width: 100%;
+  height: calc(450px / 13);
+}
+.flag .stripe:nth-child(even) {
+  background-color: #fefefe;
+}
+.flag .stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 378px;
+  height: calc((450px / 13) * 7);
+  background-color: #041e42;
+  z-index: 1;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.flag .stars .row {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.flag .stars .row:nth-child(2n) {
+  left: calc(100% / 12);
+}
+.flag .stars .star {
+  font-size: 20px;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  margin-top: -4px;
+  width: calc(100% / 6);
+}
+
+/*# sourceMappingURL=styles.css.map */
